@@ -1,0 +1,144 @@
+@import "./src/wetoast/wetoast.wxss";
+@import "./src/wetoast/noMoreData.wxss";
+
+/*color  */
+.rui-colorb{color:#2b81ff!important;}
+.rui-colorh{color:#222222!important;}
+.rui-colorg{color:#989898!important;}
+
+/*font-size  */
+.rui-fs18{font-size: 18px;}
+
+/*float  */
+.rui-fr{float: right;}
+.rui-fl{float: left;}
+
+/*icon  */
+.rui-icon{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+/*overflow  */
+.ofh{overflow: hidden;}
+
+/*隐藏显示  */
+.rui-hide{display: none;}
+.rui-show{display: block;}
+
+/*首页  */
+.rui-nav-box{
+  font-size: 0;
+  padding: 20px 15px;
+}
+.rui-nav-content{
+  display: inline-block;
+  border: 1px solid #2B81FF;
+  border-radius: 6px;
+  color: #2B81FF;
+  overflow: hidden;
+  font-size: 0;
+}
+.rui-nav-content view{
+  display: inline-block;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  width: 60px;
+  text-align: center;
+  border-right: 1px solid #2b81ff;
+}
+.rui-nav-content view:last-child{border: none;}
+.rui-nav-content view.active{
+  background-color: #2B81FF;
+  color: #fff;
+}
+.rui-total-people{
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+.rui-total-box{
+  padding: 10px 0;
+  font-size: 0;
+}
+.rui-total-li{
+  display: inline-block;
+  width: 50%;
+  font-size: 13px;
+  color: #989898;
+  text-align: center;
+  box-sizing: border-box;
+}
+.rui-total-li:first-child{border-right: 1px solid #989898;}
+.rui-total-num{
+  height: 26px;
+  line-height: 26px;
+  color: #222222;
+  font-size: 18px;
+}
+.rui-people-num{
+  height: 37.5px;
+  line-height: 37.5px;
+  overflow: hidden;
+  text-align: left;
+  color: #222;
+  position: relative;
+  padding-left: 10px;
+}
+.rui-people-num::after{
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius:50%;
+  background-color: #2b81ff;
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: 0; 
+}
+.rui-people-num.active1::after{background-color: #fdbd12;}
+.rui-people-num.active2::after{background-color: #13d899;}
+.rui-people-num.active3::after{background-color: #ff612a;}
+.rui-total-name{
+  width: 45px;
+  margin-right: 5px;
+}
+.rui-total-precent{
+  color: #989898;
+  border-left:1px solid #989898;
+  padding-left: 5px;
+  height: 17.5px;
+  line-height: 17.5px;
+  margin-top: 10px;
+}
+.rui-meun-li{
+  color: #222222;
+  font-size: 13px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+.rui-meun-name{
+  width: 50px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+}
+
+/*btn  */
+.rui-btn{
+  margin: 15px;
+  margin-bottom: 0;
+  background-color: #fff;
+  color: #e94f4f;
+  font-size: 15px;
+}
+.rui-btn-submit{
+  background-color: #2b81ff;
+  color: #fff;
+}
+.rui-btn-reset{
+  color: #222;
+}
