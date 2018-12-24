@@ -1,0 +1,7 @@
+<swiper style="width:{{swiperwidth}};height:{{swiperheight}};" class="rui-swiper-content" skip-hidden-item-layout="{{skipHiddenItemLayout}}" display-multiple-items="{{displayMultipleItems}}" next-margin="{{nextMargin}}" previous-margin="{{previousMargin}}" vertical="{{vertical}}" circular="{{circular}}" interval="{{interval}}" duration="{{duration}}" current-item-id="{{currentItemId}}" current="{{currentItemId == '' ? current : currentItemId}}" indicator-active-color="{{indicatorActiveColor}}" indicator-color="{{indicatorColor}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" bindchange='changeSwiper' bindanimationfinish='finishSwiper'>
+  <block wx:for="{{swiperList}}" wx:key="swiperList">
+    <swiper-item class="rui-swiper-box">
+      <image style="width:{{imgwidth}};height:{{imgheight}};margin-left:{{previousMargin === '0px' && nextMargin !== '0px' ? '0px' : ''}};opacity :{{isOpacity ? (index === current ? 1 : 0.5) : 1}};transform:scale({{isScale ? (index === current ? 1 : 0.95) : 1}});" src="{{item.imgUrl}}" class="rui-swiper-img rui-class"/>
+    </swiper-item>
+  </block>
+</swiper>

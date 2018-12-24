@@ -1,0 +1,13 @@
+/* component/swiper.wxss */
+.rui-swiper-content{
+  width: 100vw;
+  height: 42.6667vw;
+  overflow: hidden;
+}
+.rui-swiper-box,.rui-swiper-img{
+  width: 100vw;
+  height: 42.6667vw;
+  display: block;
+  margin: 0 auto;
+}
+.rui-swiper-box{position: relative;}

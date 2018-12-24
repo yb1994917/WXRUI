@@ -1,6 +1,3 @@
-@import "./src/wetoast/wetoast.wxss";
-@import "./src/wetoast/noMoreData.wxss";
-
 /*color  */
 .rui-colorb{color:#2b81ff!important;}
 .rui-colorh{color:#222222!important;}
