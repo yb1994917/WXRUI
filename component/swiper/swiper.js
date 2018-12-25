@@ -27,6 +27,10 @@ Component({
       type: Number,
       value: 0
     },
+    type: {
+      type: String,
+      value: 'image'
+    },
     currentItemId: {
       type: String,
       value: ''
@@ -98,6 +102,9 @@ Component({
     },
     finishSwiper(e){
       this.triggerEvent('swiperfinish', { current: e.detail.current }, {});
+    },
+    tapSwiper(e){
+      this.triggerEvent('swipertap', { index: e.currentTarget.dataset.index }, {});
     }
   }
 });

@@ -1,17 +1,85 @@
-<view class='rui-banner-mold'>常规轮播</view>
-<rui-swiper swiperList="{{bannerList}}" indicatorDots="true" autoplay="true"></rui-swiper>
+<view class='rui-banner-mold'>常规滑动轮播</view>
+<rui-swiper 
+  swiperList="{{bannerList}}" 
+  indicatorDots="true" 
+  autoplay="true"
+></rui-swiper>
 
 <view class='rui-banner-mold'>衔接滑动轮播</view>
-<rui-swiper swiperList="{{bannerList}}" indicatorDots="true" autoplay="true" circular="true"></rui-swiper>
+<rui-swiper 
+  swiperList="{{bannerList}}" 
+  indicatorDots="true" 
+  autoplay="true" 
+  circular="true"
+></rui-swiper>
 
 <view class='rui-banner-mold'>纵向滑动轮播</view>
-<rui-swiper swiperList="{{bannerList}}" indicatorDots="true" autoplay="true" vertical="true"></rui-swiper>
+<rui-swiper 
+  swiperList="{{bannerList}}" 
+  indicatorDots="true" 
+  autoplay="true" 
+  vertical="true"
+></rui-swiper>
 
-<view class='rui-banner-mold'>后边距轮播</view>
-<rui-swiper swiperList="{{bannerList}}" indicatorDots="true" autoplay="true" imgwidth="90vw" circular="true" next-margin="30px"></rui-swiper>
+<view class='rui-banner-mold'>纵向衔接滑动轮播</view>
+<rui-swiper 
+  swiperList="{{bannerList}}" 
+  indicatorDots="true" 
+  autoplay="true" 
+  circular="true" 
+  vertical="true"
+></rui-swiper>
 
-<view class='rui-banner-mold'>前后边距同存轮播</view>
-<rui-swiper swiperList="{{bannerList}}" indicatorDots="true" autoplay="true" current='{{current}}' isOpacity="true" isScale="true"  imgwidth="85vw" circular="true" previous-margin="30px" next-margin="30px" rui-class="rui-banner-img" bindswiperfinish='changeFun'></rui-swiper>
+<view class='rui-banner-mold'>后边距滑动</view>
+<rui-swiper 
+  swiperList="{{bannerList}}" 
+  indicatorDots="true" 
+  autoplay="true" 
+  imgwidth="90vw" 
+  circular="true" 
+  next-margin="30px"
+></rui-swiper>
 
-<view class='rui-banner-mold'>多图片轮播</view>
-<rui-swiper swiperList="{{bannerList}}" circular="true" autoplay="true" display-multiple-items="2" swiperheight="21.333vw" imgheight="21.333vw" imgwidth="50vw" current='0' circular="true"></rui-swiper>
+<view class='rui-banner-mold'>前后边距滑动轮播</view>
+<rui-swiper 
+  swiperList="{{bannerList}}" 
+  indicatorDots="true" 
+  autoplay="true" 
+  current='{{current}}' 
+  isOpacity="true" 
+  isScale="true"  
+  imgwidth="82vw" 
+  circular="true" 
+  previous-margin="30px" 
+  next-margin="30px" 
+  rui-class="rui-banner-img" 
+  bindswiperfinish='changeFun'
+></rui-swiper>
+
+<view class='rui-banner-mold'>多图片滑动轮播</view>
+<rui-swiper 
+  swiperList="{{bannerList}}" 
+  circular="true" 
+  autoplay="true" 
+  display-multiple-items="2" 
+  swiperheight="21.333vw" 
+  imgheight="21.333vw" 
+  imgwidth="50vw" 
+  current='0'
+></rui-swiper>
+
+<view class='rui-banner-mold'>文字滑动导航</view>
+<rui-swiper 
+  type="text" 
+  class='rui-active' 
+  swiperList="{{navList}}" 
+  display-multiple-items="4" 
+  swiperheight="12vw" 
+  imgheight="12vw" 
+  previous-margin="10px" 
+  next-margin="10px" 
+  current='{{current_text}}' 
+  circular="true" 
+  imgwidth="calc((100vw - 20px) / 4 - 40px)" 
+  bindswipertap="getIndex"
+></rui-swiper>
