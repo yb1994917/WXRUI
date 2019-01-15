@@ -1,0 +1,4 @@
+<!--component/list-group/list-group.wxml-->
+<view class='rui-list-content rui-class'>
+  <slot></slot>
+</view>
