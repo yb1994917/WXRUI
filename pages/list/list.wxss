@@ -1,0 +1,12 @@
+/* pages/list/list.wxss */
+.rui-more{
+  font-size: 3.5vw;
+  color: #999;
+}
+.rui-border{
+  border: none!important;
+}
+.rui-border0{
+  border: none!important;
+  align-items: flex-start!important;
+}

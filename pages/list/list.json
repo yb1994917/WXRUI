@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "rui-list": "../../component/list/list",
+    "rui-panel": "../../component/panel/panel",
+    "rui-list-group": "../../component/list-group/list-group"
+  }
+}

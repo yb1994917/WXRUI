@@ -1,0 +1,54 @@
+<rui-panel title="单行列表"></rui-panel>
+<rui-list-group>
+  <rui-list rui-class="rui-border" title="单行列表"></rui-list>
+</rui-list-group>
+
+<rui-panel title="单行列表"></rui-panel>
+<rui-list-group>
+  <rui-list rui-class="rui-border" title="单行列表" value="详细信息" isRight="true"></rui-list>
+</rui-list-group>
+
+<rui-panel title="单行列表和描述"></rui-panel>
+<rui-list-group>
+  <rui-list rui-class="rui-border" title="单行列表" label="附加描述" value="详细信息"></rui-list>
+</rui-list-group>
+
+<rui-panel title="单行列表和描述"></rui-panel>
+<rui-list-group>
+  <rui-list rui-class="rui-border0" title="单行列表" label="在这个电商充斥着生活各个角落的时代，都知道在购物过程会给用户生成订单，如果用户不满意或者收货等就需要去修改订单状态，在开发过程中，当用户修改订单成功后，后台一般会返回提示是否修改成功，而不会返回这个订单的详细情况。那么我们如何使前端页面更新这个订单的状态呢？一般有两种方法实现：1，人为的修改前端的数据；2，再次请求数据（也就是页面刷新）。">
+    <image slot="left" style='width:21.333vw;height:17.333vw;margin-right:2vw;' src="../../src/images/img-1.png"></image>
+  </rui-list>
+</rui-list-group>
+
+<rui-panel title="单行列表和icon"></rui-panel>
+<rui-list-group>
+  <rui-list rui-class="rui-border" title="单行列表" value="时代在召唤">
+    <image slot="left" style='width:12vw;height:12vw;margin-right:2vw;' src="../../src/images/user-logo.png"></image>
+  </rui-list>
+</rui-list-group>
+
+<rui-panel title="单行列表箭头"></rui-panel>
+<rui-list-group>
+  <rui-list rui-class="rui-border" title="单行列表" isRight="true"></rui-list>
+</rui-list-group>
+
+<rui-panel title="跳转页面"></rui-panel>
+<rui-list-group>
+  <rui-list rui-class="rui-border" url="../../pages/swiper/swiper" title="跳转swiper页面" isRight="true"></rui-list>
+</rui-list-group>
+
+<rui-panel title="list 组"></rui-panel>
+<rui-list-group  rui-class="rui-border">
+  <rui-list title="箭头" isRight="true"></rui-list>
+  <rui-list title="右侧描述和箭头" value="支付100" isRight="true"></rui-list>
+  <rui-list title="右侧描述" value="支付100"></rui-list>
+  <rui-list title="跳转swiper页面" url="../../pages/swiper/swiper" isRight="true"></rui-list>
+  <rui-list title="title描述文本" label="进行附加描述文本位置" isRight="true"></rui-list>
+  <rui-list title="title描述文本" label="进行附加描述文本位置" value="右侧描述文本"></rui-list>
+  <rui-list title="表单">
+    <input slot="right" placeholder='带小数点的数字键盘' type="digit"></input>
+  </rui-list>
+  <rui-list title="开关">
+    <switch slot="right" color='#2ed39e' checked='true'></switch>
+  </rui-list>
+</rui-list-group>
