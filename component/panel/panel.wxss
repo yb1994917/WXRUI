@@ -1,0 +1,16 @@
+/* component/panel/panel.wxss */
+.rui-panel-content{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  font-size: 4vw;
+  padding: 3vw;
+  background-color: #eee;
+}
+.rui-panel-title{
+  flex-grow: 1;
+  color: #222;
+}
+.rui-panel-right{
+  flex: 0 0 auto;
+}
