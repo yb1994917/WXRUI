@@ -1,20 +1,8 @@
-page{background-color: #fff;}
-.rui-banner-content,.rui-banner-img{
-  width: 100vw;
-  height: 42.6667vw;
+.rui-list-newli{
+  padding-left: 0!important;
+  margin-left: 3vw;
 }
-.rui-banner-mold{
-  height: 12vw;
-  line-height: 12vw;
-  padding: 0 4vw;
-  font-size: 4vw;
+.rui-list-newcontent{
+  border-bottom: none!important;
 }
-.rui-banner-content{
-  width: 100vw;
-  height: 14.2222vw;
-}
-.rui-banner-img{
-  border: 1px solid #2ed39e;
-  box-sizing: border-box;
-  opacity: 0.3;
-}
+

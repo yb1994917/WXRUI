@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "rui-swiper": "../../component/swiper/swiper"
+    "rui-panel": "../../component/panel/panel",
+    "rui-list": "../../component/list/list",
+    "rui-list-group": "../../component/list-group/list-group"
   }
 }
