@@ -1,0 +1,19 @@
+<!--component/list/list.wxml-->
+<view class='rui-list-li rui-class' url="{{url}}" bindtap="nextPage">
+  <view>
+    <image wx:if="{{iconUrl}}" class='rui-li-icon' src="{{iconUrl}}"></image>
+    <view else class='rui-li-icon'></view>
+    <slot name="left"></slot>
+  </view>
+  <view class='rui-li-title'>
+    <view wx:if="{{title}}" class='rui-li-text'>{{title}}</view>
+    <view wx:if="{{label}}" class='rui-li-desc'>{{label}}</view>
+    <slot name="center"></slot>
+  </view>
+  <view class='rui-li-right {{isRight ? "rui-li-more" : ""}}'>
+    <block wx:if="{{value}}">{{value}}</block>
+    <block wx:else>
+      <slot name="right"></slot>
+    </block>
+  </view>
+</view>

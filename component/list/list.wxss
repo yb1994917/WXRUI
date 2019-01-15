@@ -1,0 +1,44 @@
+/* component/list/list.wxss */
+.rui-list-li{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  padding:4vw 3vw;
+  font-size: 4vw;
+  border-bottom: 1px solid #eee;
+}
+.rui-li-title{
+  flex-grow: 1;
+}
+.rui-li-text{
+  line-height: 1.6;
+}
+.rui-li-desc{
+  font-size: 3.3vw;
+  color: #80848f;
+  line-height: 1.2;
+}
+.rui-li-right,.rui-li-icon{
+  flex: 0 0 auto;
+}
+.rui-li-more{
+  position:relative;
+  text-align:right;
+  color:#495060
+}
+.rui-li-more{
+  padding-right:13px
+}
+.rui-li-more::after{
+  content:" ";
+  display:inline-block;
+  width:6px;
+  height:6px;
+  position:absolute;
+  top:50%;
+  right:2px;
+  border-width:2px 2px 0 0;
+  border-color:#aaa;
+  border-style:solid;
+  transform:translateY(-50%) matrix(.71,.71,-.71,.71,0,0)
+}
